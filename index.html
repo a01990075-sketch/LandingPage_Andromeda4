@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrómeda 4 · Equipo 4 · Proyecto final</title>
+<meta name="description" content="Proyecto final del Equipo 4, Andrómeda 4. Apunta a la galaxia, despega en equipo.">
+<meta name="theme-color" content="#080F29">
+<meta property="og:title" content="Andrómeda 4 · Equipo 4">
+<meta property="og:description" content="Apunta a la galaxia, despega en equipo. Proyecto final del Equipo 4.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="brand" href="#inicio" aria-label="Andrómeda 4, inicio">
+    <img src="assets/logo.png" alt="" width="40" height="40">
+    <span>Andrómeda 4</span>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#mision">Misión</a>
+    <a href="#tripulacion">Tripulación</a>
+    <a href="#entrega">Entrega</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <p class="tag">Equipo 4 · Proyecto final</p>
+      <h1>Apunta a la galaxia,<br>despega en equipo.</h1>
+      <p class="lead">Nadie llega a Andrómeda solo. Cada idea suma combustible, y juntos llegamos más lejos de lo que imaginamos.</p>
+      <a class="btn" href="#entrega">Ver el proyecto</a>
+    </div>
+    <div class="hero-logo">
+      <div class="glow" aria-hidden="true"></div>
+      <img src="assets/logo.png" alt="Logo del Equipo 4, Andrómeda 4: una galaxia violeta y un cohete con estela turquesa" width="520" height="520">
+    </div>
+  </section>
+
+  <!-- CRONÓMETRO -->
+  <section class="launch" aria-labelledby="launch-title">
+    <div class="launch-head">
+      <h2 id="launch-title">Cuenta regresiva para el cierre de noviembre</h2>
+      <p id="launch-date" class="muted"></p>
+    </div>
+    <div class="clock" id="clock" role="timer" aria-live="off">
+      <div class="unit"><span class="num" id="d">00</span><span class="lbl">días</span></div>
+      <div class="sep" aria-hidden="true">:</div>
+      <div class="unit"><span class="num" id="h">00</span><span class="lbl">horas</span></div>
+      <div class="sep" aria-hidden="true">:</div>
+      <div class="unit"><span class="num" id="m">00</span><span class="lbl">minutos</span></div>
+      <div class="sep" aria-hidden="true">:</div>
+      <div class="unit"><span class="num" id="s">00</span><span class="lbl">segundos</span></div>
+    </div>
+    <div class="track" aria-hidden="true">
+      <div class="bar" id="bar"></div>
+      <svg class="rocket" id="rocket" viewBox="0 0 24 24" width="26" height="26"><path d="M12 2c3 2 5 6 5 10l2 3-4 1-1 5h-4l-1-5-4-1 2-3c0-4 2-8 5-10z" fill="#fff"/></svg>
+    </div>
+    <p class="muted small" id="progress-text"></p>
+  </section>
+
+  <!-- MISIÓN -->
+  <section class="section" id="mision">
+    <h2>Nuestra misión</h2>
+    <div class="mission">
+      <p class="big">
+        <!-- EDITA AQUÍ: describe tu proyecto en 2 o 3 frases -->
+        Somos el Equipo 4. Este es el espacio para contar de qué trata nuestro proyecto final, qué problema resuelve y a quién ayuda.
+      </p>
+      <ul class="facts">
+        <li><strong>Problema</strong><span>Describe en una línea el problema que atacan.</span></li>
+        <li><strong>Solución</strong><span>Explica en una línea qué construyeron.</span></li>
+        <li><strong>Resultado</strong><span>Cuenta qué lograron o qué aprendieron.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TRIPULACIÓN -->
+  <section class="section" id="tripulacion">
+    <h2>La tripulación</h2>
+    <p class="muted intro">Cinco personas, una sola nave.</p>
+    <div class="crew">
+      <!-- EDITA AQUÍ: cambia nombres, roles e iniciales. Duplica o borra bloques según tu equipo -->
+      <article class="member"><div class="avatar">I1</div><h3>Integrante 1</h3><p>Rol en el proyecto</p></article>
+      <article class="member"><div class="avatar">I2</div><h3>Integrante 2</h3><p>Rol en el proyecto</p></article>
+      <article class="member"><div class="avatar">I3</div><h3>Integrante 3</h3><p>Rol en el proyecto</p></article>
+      <article class="member"><div class="avatar">I4</div><h3>Integrante 4</h3><p>Rol en el proyecto</p></article>
+      <article class="member"><div class="avatar">I5</div><h3>Integrante 5</h3><p>Rol en el proyecto</p></article>
+    </div>
+  </section>
+
+  <!-- ENTREGA -->
+  <section class="section" id="entrega">
+    <h2>Entrega del proyecto</h2>
+    <div class="deliver">
+      <!-- EDITA AQUÍ: pon tus enlaces reales en href -->
+      <a class="card" href="#" target="_blank" rel="noopener"><h3>Proyecto en vivo</h3><p>Abre la versión final.</p></a>
+      <a class="card" href="#" target="_blank" rel="noopener"><h3>Presentación</h3><p>Mira las diapositivas.</p></a>
+      <a class="card" href="#" target="_blank" rel="noopener"><h3>Repositorio</h3><p>Revisa el código en GitHub.</p></a>
+      <a class="card" href="#" target="_blank" rel="noopener"><h3>Documentación</h3><p>Lee el reporte completo.</p></a>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="closing">
+    <img src="assets/logo.png" alt="" width="96" height="96">
+    <p>Gracias por viajar con nosotros.</p>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Equipo 4 · Andrómeda 4</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
