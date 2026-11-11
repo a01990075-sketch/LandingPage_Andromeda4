@@ -9,3 +9,6 @@
 ## Qué editar
 En `index.html` busca los comentarios `EDITA AQUÍ`: descripción del proyecto, nombres de integrantes y enlaces de entrega.
 La fecha del cronómetro está en `js/main.js` (30 de noviembre, 23:59:59).
+
+## Ventanas de lanzamiento
+La sección *Ventanas de lanzamiento* lee `config.js` directamente de https://echucuan.github.io/rocketTecSinaloa2026/ , así que se actualiza sola cuando esa página cambie sus ventanas. Si esa página no responde, usa una copia de respaldo en `js/launch.js`.

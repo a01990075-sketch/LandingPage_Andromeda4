@@ -26,6 +26,7 @@
     <span>Andrómeda 4</span>
   </a>
   <nav aria-label="Principal">
+    <a href="#ventanas">Ventanas</a>
     <a href="#mision">Misión</a>
     <a href="#tripulacion">Tripulación</a>
     <a href="#entrega">Entrega</a>
@@ -67,6 +68,28 @@
       <svg class="rocket" id="rocket" viewBox="0 0 24 24" width="26" height="26"><path d="M12 2c3 2 5 6 5 10l2 3-4 1-1 5h-4l-1-5-4-1 2-3c0-4 2-8 5-10z" fill="#fff"/></svg>
     </div>
     <p class="muted small" id="progress-text"></p>
+  </section>
+
+  <!-- VENTANAS DE LANZAMIENTO (sincronizado con Rocket Tec Sinaloa 2026) -->
+  <section class="section" id="ventanas" aria-labelledby="vent-title">
+    <h2 id="vent-title">Ventanas de lanzamiento</h2>
+    <p class="muted intro">Sincronizado en vivo con Rocket Tec Sinaloa 2026 · Reto F1025B.</p>
+    <div class="win" id="win" tabindex="0" aria-label="Ventanas de lanzamiento">
+      <nav class="win-nav" aria-label="Recorrer ventanas">
+        <button id="win-prev" type="button" aria-label="Ventana anterior">&#8592;</button>
+        <span id="win-pos" aria-live="polite"></span>
+        <button id="win-next" type="button" aria-label="Ventana siguiente">&#8594;</button>
+      </nav>
+      <p class="win-name">Ventana <strong id="win-title">—</strong></p>
+      <p class="win-schedule muted" id="win-schedule"></p>
+      <p class="win-status" id="win-status" role="status"></p>
+      <div class="win-clock" id="win-clock" role="timer"></div>
+      <p class="muted small" id="win-note"></p>
+      <div class="win-links">
+        <a class="btn btn-sm" id="win-detail" href="https://echucuan.github.io/rocketTecSinaloa2026/ventanas/ALFA-1.html" target="_blank" rel="noopener">Detalles de la ventana</a>
+        <a class="btn-ghost" href="https://echucuan.github.io/rocketTecSinaloa2026/" target="_blank" rel="noopener">Abrir Rocket Tec Sinaloa 2026</a>
+      </div>
+    </div>
   </section>
 
   <!-- MISIÓN -->
@@ -122,6 +145,9 @@
   <span>© <span id="year"></span> Equipo 4 · Andrómeda 4</span>
 </footer>
 
+<!-- Datos oficiales de las ventanas: se leen directo de la página de Rocket Tec Sinaloa para mantenerse sincronizados -->
+<script src="https://echucuan.github.io/rocketTecSinaloa2026/config.js"></script>
+<script src="js/launch.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
